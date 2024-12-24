@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="nigth-style.css" />
+
+    <title>Frontend quiz app</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_langs"></div>
+        <div class="header_switch_wrapper">
+          <div class="header_switch">
+            <div class="header_switch-sun">
+              <img
+                class="header_switc-icon-light"
+                src="./assets/images/icon-sun-dark.svg"
+                alt=""
+              />
+              <img
+                class="header_switc-icon-dark"
+                src="./assets/images/icon-sun-light.svg"
+                alt=""
+              />
+            </div>
+            <div id="header_switch-toggle" class="header_switch-toggle">
+              <div class="elips elips_one active"></div>
+              <div class="elips elips_two"></div>
+            </div>
+            <div class="header_switch-moon">
+              <img
+                class="header_switc-icon-light"
+                src="./assets/images/icon-moon-dark.svg"
+                alt=""
+              />
+              <img
+                class="header_switc-icon-dark"
+                src="./assets/images/icon-moon-light.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="wellcome_wrapper">
+        <div class="wellcome">
+          <div class="container">
+            <div class="wellcome_inner">
+              <div class="wellcome_inner-text">
+                <h1 class="wellcome_inner-text-title">Welcome to the</h1>
+                <h1
+                  class="wellcome_inner-text-title wellcome_inner-text-title-strong"
+                >
+                  Frontend Quiz!
+                </h1>
+
+                <p class="wellcome_inner-text-desc">
+                  Pick a subject to get started.
+                </p>
+              </div>
+              <div class="wellcome_inner-content">
+                <ul class="wellcome_inner-content-list"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="html_quiz-wrapper">
+        <div class="html_quiz">
+          <div class="container">
+            <div class="html_quiz-content">
+              <div class="html_quiz-content-text">
+                <div class="html_quiz-quantity">
+                  <p>
+                    Question <span id="currentQuestionNumber">1</span> of
+                    <span id="totalQuestionsNumber">10</span>
+                  </p>
+                </div>
+
+                <div class="html_quiz-ask">
+                  <p class="html_quiz-ask-title"></p>
+                  <div class="html_quiz-ask-progress">
+                    <span class="progress_bar"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="html_quiz-content-options">
+                <ul class="html_quiz-content-options-list"></ul>
+                <button type="submit" class="html_quiz-content-options-btn">
+                  Submit Answer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="finish_wrapper">
+        <div class="finish">
+          <div class="container">
+            <div class="finish_content">
+              <div class="finish_content-text">
+                <h1 class="finish_content-text-title">
+                  Quiz completed &#10; <span>You scored...</span>
+                </h1>
+              </div>
+              <div class="finish_content-results">
+                <div class="finish_content-results-current">
+                  <div class="header_langs"></div>
+                  <span class="finish_content-results-current-qual"></span>
+                  <span class="finish_content-results-current-of"></span>
+                </div>
+                <button class="finish_content-results-btn">Play Again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
